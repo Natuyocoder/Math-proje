@@ -1,0 +1,23 @@
+print("Merhaba Dünya")
+for i in range(1, 1001):
+    print(i)
+
+def draw_rectangle(length, width):
+    rectangle = ""
+    for i in range(length):
+        rectangle += "*" * width + "\n"
+    return rectangle
+
+def rectangle_perimeter_area(length, width):
+    perimeter = 2 * (length + width)
+    area = length * width
+    return perimeter, area
+
+length = 15
+width = 15
+
+perimeter, area = rectangle_perimeter_area(length, width)
+print("Shape of the rectangle:")
+print(draw_rectangle(length, width))
+print("Perimeter of the rectangle:", perimeter)
+print("Area of the rectangle:", area)
